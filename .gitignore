@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+.babelrc
+.editorconfig
+.yo-rc.json
+.tmp/
+gulp_tasks/
+gulpfile.js
+conf/
+.gitattributes
