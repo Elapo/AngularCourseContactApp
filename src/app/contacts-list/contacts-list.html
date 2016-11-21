@@ -6,7 +6,7 @@
   <button class="btn" ng-class="{ red: ctrl.showList }" ng-click="ctrl.toggleList()">Toggle list</button>
   <ul class="collection" ng-if="ctrl.showList">
     <li class="collection-item" ng-repeat="person in ctrl.contacts">
-      <span class="title">{{ $index +1 }}: {{ person.name }}</span>
+      <span class="title">{{ $index +1 }}: <a href="#/details/{{person.id}}">{{ person.name }}</a></span>
       <p>{{ person.username }}<br>{{person.email}}</p>
     </li>
   </ul>
