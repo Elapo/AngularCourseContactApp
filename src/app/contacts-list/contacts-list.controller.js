@@ -37,13 +37,4 @@ export class ContactsListController{
     this.showList = !this.showList;
   }
 
-  addContact(newContact){
-    let contact = {
-      name:newContact.name,
-      email: newContact.email,
-      username: newContact.username
-    };
-    this.contacts.push(contact);
-  }
-
 }

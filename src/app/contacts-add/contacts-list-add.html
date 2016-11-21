@@ -1,0 +1,22 @@
+<form class="col s12" novalidate name="addForm" ng-submit="ctrl.addContact(newContact)">
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" id="name" required ng-model="newContact.name">
+      <label for="name">Name:</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="text" id="username" required ng-model="newContact.username">
+      <label for="username">Username:</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input type="email" id="email" required ng-model="newContact.email">
+      <label for="email">Email:</label>
+    </div>
+  </div>
+  <div class="row">
+    <button type="submit" class="btn" ng-disabled="addForm.$invalid">Add contact</button>
+  </div>
+</form>
+

@@ -1,7 +1,6 @@
 import angular from 'angular';
 import ngRoute from 'angular-route';
 
-import {ContactsListController} from './contacts-list/contacts-list.controller';
 import {moduleconfig} from './app.config';
 
 export default angular.module('contactsApp', [ngRoute])
@@ -11,6 +10,6 @@ export default angular.module('contactsApp', [ngRoute])
 })
   .config(moduleconfig)
   .constant('apiUrl', 'https://jsonplaceholder.typicode.com/')
-  .controller('ContactsListController', ContactsListController)
+//  .controller('ContactsListController', ContactsListController)
 //  .controller('ChildController', ($scope) => {})
   .name;
